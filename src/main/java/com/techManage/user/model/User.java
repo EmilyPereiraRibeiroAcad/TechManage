@@ -31,8 +31,6 @@ public class User {
     @NotNull(message = "User type is required.")
     private UserType userType;
 
-    // Getters and Setters
-
     public Long getId() {
         return id;
     }
