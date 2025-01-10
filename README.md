@@ -11,13 +11,13 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 Certifique-se de ter os seguintes programas instalados:
 
-- **Java JDK 17** (ou a versão que você está usando)  
+- **Java JDK 17**  
   Verifique com:
   ```bash
   java -version
   ```
 
-- **Maven** (ou Gradle, dependendo do seu projeto)  
+- **Maven**   
   Verifique com:
   ```bash
   mvn -version
@@ -32,8 +32,8 @@ Certifique-se de ter os seguintes programas instalados:
 
 Clone o repositório para sua máquina local:
 ```bash
-git clone https://github.com/seu-usuario/sua-api.git
-cd sua-api
+git clone https://github.com/EmilyPereiraRibeiroAcad/TechManage.git
+cd user
 ```
 
 ---
@@ -65,11 +65,8 @@ mvn clean package
 
 Execute o arquivo `.jar` gerado:
 ```bash
-java -jar target/sua-api-1.0.0.jar
+java -jar target/user.jar
 ```
-> Substitua `sua-api-1.0.0.jar` pelo nome correto do arquivo gerado.
-
----
 
 ## **Passo 5: Teste a API**
 
@@ -92,6 +89,12 @@ O teste valida a integração do Controller
 
 - **GET /api/users/{id}**  
   Retorna um usuário específico pelo ID.  
+
+- **PUT /api/users/{id}**  
+  Altera os dados de um usuario especifico.
+
+- **DELETE /api/users/{id}**  
+  Elimina os dados de um usuario especifico.  
 
 - **POST /api/users**  
   Cria um novo usuário.  
